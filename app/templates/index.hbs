@@ -1,12 +1,19 @@
+{{!-- <NavBar /> --}}
 <Jumbo>
   <h2>Welcome to Super Rentals!</h2>
   <p>We hope you find exactly what you're looking for in a place to stay.</p>
   <LinkTo @route="about" class="button">About Us</LinkTo>
   
 </Jumbo>
-
-
 {{!-- When clicking on one of these special links, 
 Ember will intercept the click, render the content for the new page, 
 and update the URL—all performed locally without having to wait for the server, 
 thus avoiding a full page refresh. --}}
+
+<div class="rentals">
+  <ul class="results">
+    <li><Rental /></li>
+    <li><Rental /></li>
+    <li><Rental /></li>
+  </ul>
+</div>
